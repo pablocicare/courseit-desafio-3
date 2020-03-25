@@ -1,0 +1,55 @@
+/*font-family: 'Oswald', sans-serif;*/
+body {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #e7e7e7;
+    height: 2em;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    padding: 4px 0;
+}
+
+body .content {
+    display: flex;
+}
+
+body .content .all-divs {
+    width: 16.6%;
+}
+
+.content .mixin {
+    background-color: lightblue;
+    height: auto;
+}
+
+.content .effects {
+    background-color: lightslategray;
+}
+
+.content .monkey {
+    background-color: orange;
+}
+
+.content .mobile {
+    background-color: blue;
+}
+
+.content .tutorial {
+    background-color: red;
+}
+
+.content .clock {
+    background-color: seagreen;
+}
+
