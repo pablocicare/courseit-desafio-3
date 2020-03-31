@@ -1,32 +1,71 @@
-/*font-family: 'Oswald', sans-serif;*/
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     width: 100%;
-    height: auto;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
 
-header {
+.header {
     width: 100%;
     background-color: #e7e7e7;
     height: 2em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
 }
 
-header p {
+.header .about {
     margin: 0;
-    padding: 4px 0;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #808080;
+}
+
+.header .twitter {
+    position: absolute;
+    margin: 0;
+    padding: 8px 0;
+    right: 15px;
+}
+
+.main .link {
+    text-decoration: none;
+    color: #808080;
+    padding: 0 5px;
 }
 
 body .content {
     display: flex;
+    min-height: 100vh;
 }
 
-body .content .all-divs {
-    width: 16.6%;
+.content .all-divs {
     color: #ffffff;
+    margin-top: 30px;
+    padding: 47px 30px 0;
+    width: 16.66667%;
+}
+
+body .content .all-divs h3 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 5px 0 30px;
+    transition: transform .2s;
+}
+
+body .content .all-divs h3:hover {
+    transform: scale(1.05);
+}
+
+body .content .all-divs p {
+    color: #ece7e7;
+}
+
+.content .date {
+    font-size: 12px;
+    margin: 0;
 }
 
 .content .mixin {
@@ -54,3 +93,13 @@ body .content .all-divs {
     background-color: #a2c5bf;
 }
 
+.all-divs .fa-eye {
+    padding-right: 5px;
+}
+
+.content .note {
+    position: absolute;
+    bottom: 30px;
+    font-size: 12px;
+    color: #ffffff;
+}
